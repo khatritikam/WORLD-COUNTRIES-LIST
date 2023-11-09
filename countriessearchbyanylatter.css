@@ -1,0 +1,68 @@
+.bg-image {
+    background-image: url(./images/globe2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+    width: 100%;
+    min-height: 22rem;
+
+}
+
+.inner-div {
+    background-color: rgba(50, 50, 255, 0.4);
+    min-height: 22rem;
+}
+
+.heading {
+    letter-spacing: 12px;
+}
+
+.search {
+    border-radius: 25px;
+    width: 370px;
+    height: 32px;
+    outline: none;
+    text-transform: uppercase;
+    text-align: inherit;
+    padding: 18px;
+}
+
+::placeholder {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.bg-image2 {
+    background-image: url(./images/map_image.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.row-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 85%;
+}
+
+.inner-div2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 255, 0.3);
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+#countries-boxes {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3.5rem;
+    row-gap: 2rem;
+    justify-content: center;
+}

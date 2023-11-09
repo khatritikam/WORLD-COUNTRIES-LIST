@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>World Countries List</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="countriessearchbyanylatter.css">
+
+<body onload="bodyLoaded()">
+    <div class="d-flex flex-column align-items-center">
+        <div class="d-flex flex-column justify-content-center align-items-center bg-image w-100 ">
+            <div class="h-100 w-100 d-flex flex-column justify-content-center align-items-center inner-div">
+                <h1 class="text-white text-uppercase heading font-weight-bold h1">World Countries List</h1>
+                <p class="text-white text-capitalize font-weight-bold" id="totalcountries"></p>
+                <p class="text-white text-capitalize" id="filter-countries"></p>
+                <div class="d-flex flex-row align-items-center">
+                    <button id="startwith" class="btn btn-primary text-uppercase text-white" onclick="searchWay('start')">starting word</button>
+                    <button id="any" class="btn btn-primary text-uppercase text-white m-1" onclick="searchWay('any')">search with any word</button>
+                    <button  id="revers" onclick="revrseCountries()" class="btn btn-primary text-white btn-lg"><i
+                            class="fa-solid fa-arrow-down-a-z"></i></button>
+                </div>
+                <div class="d-flex flex-row align-items-center text-white mt-4">
+                    <input onkeyup="searchCountries(this)" type="text" placeholder="search country.." id="search-bar" class="border-0 search">
+                    <i class="fas fa-search fa-xl ml-2"></i>
+                </div>
+            </div>
+
+        </div>
+        <div id="countries-boxes" class="d-flex align-items-center w-100 pt-5" onload="loadcountries()">
+
+        </div>
+    </div>
+    <script src="countriessearchbyanylatter.js"></script>
+</body>
+
+</html>
